@@ -9,6 +9,13 @@
     <small class="pull-left">
         <strong>
             <a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->" itemprop="author" data-username="{posts.user.username}" data-uid="{posts.user.uid}">{posts.user.displayname}</a>
+            {{{if posts.user.isAdmin}}}
+            kill me test
+            {{{end}}}
+            {{{if not posts.user.isAdmin}}}
+            test2
+            {{{end}}}
+            kill me
         </strong>
 
         <!-- IMPORT partials/topic/badge.tpl -->
