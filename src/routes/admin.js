@@ -2,6 +2,7 @@
 
 const helpers = require('./helpers');
 
+
 module.exports = function (app, name, middleware, controllers) {
     const middlewares = [middleware.pluginHooks];
 
